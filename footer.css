@@ -68,3 +68,7 @@ footer{
 .bottom_box ul > li:last-child {
     font-weight: bold;
 }
+
+.example {
+    font-weight: bold;
+}
