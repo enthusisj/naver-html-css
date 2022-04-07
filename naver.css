@@ -10,8 +10,6 @@
     border-radius: 50px;
 }
 
-/* Cascading Style Sheet */
-/* 선택자(selector) */
 .blind {
     position: absolute;
     overflow: hidden;
@@ -426,7 +424,7 @@ main {
 #main-newsstand {
     display: inline-block;
     width: 740px;
-    height: 246px;
+    height: 328px;
     background-color: white;
     margin-right: 8px;
     vertical-align: top;
