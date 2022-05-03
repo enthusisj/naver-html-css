@@ -4,8 +4,8 @@
     bottom: 50px;
     right: 50px;
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border: 1px solid black;
     border-radius: 50px;
 }
@@ -28,13 +28,18 @@
     width: 1080px;
 }
 
+/*************네이버 검색창*********************/
+/*헤더 부분*/
+
 header {
     height: 170px;
+    border-top: 1px solid rgb(204, 195, 195);
 }
 
 #header-top {
     float: right;
-    margin-top: 8px;
+    margin-top: 5px;
+    
 }
 
 #header-top span {
@@ -42,6 +47,7 @@ header {
     letter-spacing: -1px;
     font-size: 11px;
     line-height: 22px;
+    
 }
 
 #header-search {
@@ -110,6 +116,8 @@ header {
     top: -2px;
 }
 
+
+/*검색창 키보드아이콘*/
 #search-keyboard {
     background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_search.svg);
     background-repeat: no-repeat;
@@ -142,6 +150,7 @@ header {
     margin: 14px;
 }
 
+/*네이버 리스트 정렬 */
 nav {
     height: 46px;
     border-top: 1px solid #f1f3f6;
@@ -160,98 +169,119 @@ nav ul {
 }
 
 #nav-menu li:first-child span:first-child {
-    width: 25px;
+    width: 24px;
     background-position: 0 -285px;
     margin-left: 0;
 }
 
 #nav-menu li span:first-child {
-    height: 16px;
+    height: 25px;
     display: inline-block;
     background-image: url(https://s.pstatic.net/static/www/img/uit/2019/sp_nav.png);
     background-repeat: no-repeat;
     margin-left: 10px;
 }
-
+/*.mail_img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}*/
+ /*카페*/
 #nav-menu li:nth-child(2) span:first-child {
     width: 27px;
     background-position: -279px -52px;
 }
 
+/*블로그*/
 #nav-menu li:nth-child(3) span:first-child {
     width: 40px;
     background-position: -100px -182px;
 }
 
+/*지식IN*/
 #nav-menu li:nth-child(4) span:first-child {
     width: 40px;
     background-position: -101px -156px;
 }
 
+/*쇼핑*/
 #nav-menu li:nth-child(5) span:first-child {
     width: 26px;
     background-position: -279px -156px;
 }
 
+/*PAY*/
 #nav-menu li:nth-child(6) span:first-child {
     width: 25px;
     background-position: -70px -285px;
 }
 
+/*TV*/
 #nav-menu li:nth-child(7) span:first-child {
     width: 35px;
     background-position: -125px -130px;
 }
 
+/*사전*/
 #nav-menu li:nth-child(8) span:first-child {
     width: 26px;
     background-position: -279px -208px;
 }
 
+/*뉴스*/
 #nav-menu li:nth-child(9) span:first-child {
     width: 26px;
     background-position: -128px -104px;
 }
 
+/*증권*/
 #nav-menu li:nth-child(10) span:first-child {
     width: 26px;
     background-position: -36px -259px;
 }
 
+/*부동산*/
 #nav-menu li:nth-child(11) span:first-child {
     width: 39px;
     background-position: -151px -156px;
 }
 
+/*지도*/
 #nav-menu li:nth-child(12) span:first-child {
     width: 26px;
     background-position: -279px -130px;
 }
 
+/*영화*/
 #nav-menu li:nth-child(13) span:first-child {
     width: 26px;
     background-position: -234px -233px;
 }
 
+/*VIBE*/
 #nav-menu li:nth-child(14) span:first-child {
-    width: 26px;
-    background-position: -72px -259px;
+    width: 33px;
+    background-position: -195px -233px;
 }
 
+/*책*/
 #nav-menu li:nth-child(15) span:first-child {
     width: 13px;
     background-position: -140px -78px;
 }
 
+/*웹툰*/
 #nav-menu li:nth-child(16) span:first-child {
     width: 26px;
     background-position: -279px 0;
 }
 
+/*더보기*/
 #nav-menu li.more:first-child span:first-child {
     width: 55px;
-    background-position: 0 -104px;
+    background-position: 0 -150px;
 }
+
 
 .nav-divider {
     display: inline-block;
@@ -332,6 +362,7 @@ main {
     vertical-align: top;
 }
 
+/*뉴스 위 광고*/
 #main-ad {
     float: left;
     width: 740px;
@@ -339,6 +370,10 @@ main {
     background: #555;
     margin-right: 8px;
     margin-bottom: 8px;
+}
+.ad_img{
+    width: 740px;
+    height: 120px;
 }
 
 #main-login {
@@ -399,7 +434,9 @@ main {
     width: 332px;
     vertical-align: top;
 }
-
+/***************************************************/
+                /* 뉴스 css*/
+/**************************************************/
 #main-ytn h3, #main-newsstand h3 {
     font-size: 14px;
     font-family: NanumSquare,Dotum,"돋움",Helvetica,AppleSDGothicNeo,sans-serif;
@@ -421,6 +458,41 @@ main {
     display: inline-block;
 }
 
+.cf_under {
+    margin-top:10px;
+    position: relative;
+    padding: 12px 15px 11px 15px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    line-height: 24px;
+    font-size:13px;
+}
+
+.story{
+    text-align: center;
+    display: inline;
+}
+.story_link{
+    text-align: right;
+    font-size: 13px;
+    float:right;
+    font-weight: bold;
+}
+
+.news_head{
+    padding: 22px 0 16px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.news_head li{
+    font-size: 13px;
+    color : rgb(83, 81, 81);
+}
+
+.news_inter{
+    float:right;
+    margin-left:15px;
+}
 #main-newsstand {
     display: inline-block;
     width: 740px;
