@@ -7,62 +7,69 @@
   <link rel="stylesheet" href="./webfont.css">
   <link rel="stylesheet" href="./footer.css">
   <link rel="stylesheet" href="./global.css">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      font-family: Dotum, '돋움', Helvetica, "Apple SD Gothic Neo", sans-serif;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      margin: 0;
-    }
-
-    .inline-block {
-      display: inline-block;
-    }
-
-    .float-left {
-      float: left;
-    }
-  </style>
   <link rel="stylesheet" href="./naver.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Dotum, '돋움', Helvetica, "Apple SD Gothic Neo", sans-serif;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+
+      .float-left {
+        float: left;
+      }
+    </style>
+
 </head>
+
 <body>
-<header>
-  <div class="center-align"> 
-    <div id="header-top">
-      <a href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719&from=alias"><span>네이버를 시작페이지로 > | </span></a>
-      <a href="https://jr.naver.com/"><span>쥬니어네이버 | </span></a>
-      <a href="https://happybean.naver.com/"><span>해피빈</span></a>
+  <header>
+    <div class="center-align"> 
+      <div id="header-top">
+        
+        <a href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719&from=alias"><span style="margin-right:10px;font-weight: bold;">네이버를 시작페이지로 <i class="fas fa-chevron-circle-right "></i> </span></a>
+        <a href="https://jr.naver.com/"><span style="margin-right:10px;"><img src="naver_ju.png"style="margin-top:15px;"onmouseover="this.src='naver_ju1.png'" onmouseout="this.src='naver_ju.png'"></span></a>
+        <a href="https://happybean.naver.com/"><img src="naver_ha.png"style="margin-top:15px;" onmouseover="this.src='naver_ha1.png'" onmouseout="this.src='naver_ha.png'"></a>
+        
+      </div>
+      <div id="header-search">
+        <a href="https://www.naver.com">
+          <h1>
+            <span>네이버</span>
+          </h1>
+        </a>
+        <h2 class="blind">검색창</h2>
+        <form class="inline-block" action="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=">
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <input />
+            <span id="search-keyboard"></span>
+            <span id="search-history"></span>
+            <button type="submit">
+              <span class="blind">검색</span>
+              <span id="search-image"></span>
+            </button>
+          </fieldset>
+        </form>
+      </div>
     </div>
-    <div id="header-search">
-      <a href="https://www.naver.com">
-        <h1>
-          <span>네이버</span>
-        </h1>
-      </a>
-      <h2 class="blind">검색창</h2>
-      <form class="inline-block" action="https://search.naver.com/search.naver?sm=top_hty&fbm=0&ie=utf8&query=">
-        <fieldset>
-          <legend class="blind">검색</legend>
-          <input />
-          <span id="search-keyboard"></span>
-          <span id="search-history"></span>
-          <button type="submit">
-            <span class="blind">검색</span>
-            <span id="search-image"></span>
-          </button>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-</header>
+  </header>
 <nav>
+
   <div class="center-align relative">
     <div id="search-ranking">
       <h2 class="blind">실시간 검색어</h2>
@@ -116,6 +123,7 @@
     <ul id="nav-menu"> 
       <li>
         <a href="https://nid.naver.com/nidlogin.login?url=http%3A%2F%2Fmail.naver.com%2F">
+         <!--- <img src="naver_mail.png" class="mail_img">-->
           <span class="nav-item-mail"></span>
           <span class="blind">메일</span>
         </a>
@@ -132,13 +140,13 @@
       <li><a href=""><span></span><span class="blind">부동산</span></a></li> 
       <li><a href=""><span></span><span class="blind">지도</span></a></li> 
       <li><a href=""><span></span><span class="blind">영화</span></a></li> 
-      <li><a href=""><span></span><span class="blind">뮤직</span></a></li> 
+      <li><a href=""><span></span><span class="blind">VIBE</span></a></li> 
       <li><a href=""><span></span><span class="blind">책</span></a></li>
       <li><a href=""><span></span><span class="blind">웹툰</span></a></li> 
     </ul>
     <div class="nav-divider"></div>
     <ul>
-      <li class="more"><a href=""><span></span><span class="blind">더보기</span></a></li> <!-- list item -->
+      <li class="more"><a href="#"><span></span><span class="blind">더보기</span></a></li> <!-- list item -->
     </ul>
   </div>
 </nav>
@@ -147,6 +155,7 @@
     <div id="main-first-block">
       <section id="main-ad">
         <h3 class="blind">광고</h3>
+        <a href="https://www.mirm.co.kr/?utm_source=pre_naver&utm_campaign=timeboard_pc_0423&utm_medium=da_non&utm_content=banner_6"><img src="광고.png" class="ad_img"></a>
       </section>
       <section id="main-login">
         <h3 class="blind">로그인</h3>
@@ -166,13 +175,25 @@
     <div id="main-second-block">
       <div class="float-left">
         <section id="main-ytn">
-          <h3>연합뉴스</h3>
-          <ol>
-            <li>코로나 19,...</li>
-          </ol>
+          <div class="cf_under">
+            <a href="https://news.naver.com/main/list.naver?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y" style="font-weight: bold; color:black"> 연합뉴스  </a>
+            <div class="story"><i class="fas fa-angle-right"></i> 서울시, 정부발표 불참도 검토했다…"부동산은 정치 아닌 정책"</a></div>
+                <div class="story_link">
+                    <a href="#" style="color:#3565c9">뉴스홈 </a>
+                    <a href="#" > 연예 </a>
+                    <a href="#"> 스포츠 </a>
+                    <a href="#" > 경제 </a>
+            </div>
+        </div>
         </section>
         <section id="main-newsstand">
-          <h3>뉴스스탠드</h3>
+          <div class="news_head">
+            <a href="#" style="font-weight: bold;">뉴스스탠드<i class="fas fa-angle-right"></i></a>
+            <a href="#">구독한 언론사</a> <a href="#" style="font-weight: bold;">전체언론사</a>  
+            <a href="#" class="news_inter"><i class="fas fa-cog" style="color:gray;"></i></a>
+            <a href="#" class="news_inter"><i class="fas fa-grip-vertical" style="color:gray;"></i></a>
+            <a href="#" class="news_inter"><i class="fas fa-list" style="color:gray;"></i></a>
+        </div>
           <ul>
             <li><img src="./과학동아.png" alt="과학동아" /></li>
             <li><img src="./한국일보.png" alt="한국일보" /></li>
@@ -251,9 +272,9 @@
       <section id="main-shopping">
         <h3 class="blind">쇼핑</h3>
         <iframe
-          src="https://castbox.shopping.naver.com/shopbox/main.nhn?"
-          width="330"
-          height="884"
+          src="https:www.naver.com/shoppingbox/shoppingboxnew/main.nhn?domail=N"
+          width="350"
+          height="1539"
         ></iframe>
       </section>
     </div>
@@ -330,7 +351,7 @@
         <li><a href="https://help.naver.com/">고객센터</a></li>
         <li><a href="https://www.navercorp.com/">&copy; NAVER Corp.</a></li>
     </ul>
-</div>
+  </div>
 </footer>
 </body>
 </html>
