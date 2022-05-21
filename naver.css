@@ -671,6 +671,27 @@ main {
     border-bottom: 1px solid #ebeef3;
 }
 
+#main-category-under {
+    width: 100%;
+    font-size: 14px;
+    text-align: top;
+    margin-top: auto;
+}
+
+.경제M {
+    color: #00c73c;
+    font-weight: bold;
+}
+.second-text {
+    font-weight: bold;
+    color: black;
+}
+.thired-text1 {
+
+}
+.thired-text2 {
+
+}
 #subject-list, #subject-all, #subject-prev, #subject-next {
     float: left;
     height: 45px;
